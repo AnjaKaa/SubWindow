@@ -1,0 +1,60 @@
+.container_labels {
+  position: absolute;
+  width: 100%;
+  background-color: lightblue; //внешний вид
+}
+.subWindow {
+  position:absolute;
+  overflow:hidden;
+  background-color: lightblue;  //внешний вид
+  border: 2px solid darkcyan; //внешний вид
+}
+
+.subWindow_title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: white; //внешний вид
+  background-color: DarkCyan; //внешний вид
+}
+
+.subWindow_buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 15px 0 0; //внешний вид
+  background-color: CadetBlue; //внешний вид
+} 
+
+.subWindow_button {
+  position: relative;
+  display: inline-block;
+  background-color: orange; //внешний вид
+  border-radius: 50%; //внешний вид
+}
+
+.subWindow_button:hover {
+  background-color: darkorange; //внешний вид
+}
+
+.subWindow_label {
+  display: inline-block;
+  height: 30px;
+  padding: 5px;
+    
+    
+  background-color: DarkCyan;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid lightblue;    
+  
+}
+
+.subWindow_content{
+  position: absolute;
+}
+
+.collapse {
+    opacity: 0.5;
+}

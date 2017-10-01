@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <title>Окна</title>
+    <link rel="stylesheet" type="text/css" href="css/subWindows.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+<button id='createWindowsButton'>Добавить окно</button>
+<button id='saveWindowsButton'>Сохранить</button>
+<button id='loadWindowsButton'>Загрузить</button>
+<button id='clearWindowsButton'>Clear</button>
+<div id="subWindowsContainer" class="container">
+</div>
+
+<script type="text/javascript" src="js/subWindows.js"></script>
+<script type="text/javascript">
+  subWindowsCreator.config('save_localstorage',false);
+
+  document.addEventListener('click',function(e){
+      if(e.target.id=='createWindowsButton'){
+        var subWindowTitle=prompt('Введите заголовок окна', 'title');
+        var subWindowContent=prompt('Введите содержание окна', 'content');
+        subWindowsCreator.createSubWindow(subWindowTitle, subWindowContent);
+
+        console.log(subWindowsCreator.getSubWindowsList());
+      }
+      if(e.target.id=='saveWindowsButton'){
+        subWindowsCreator.saveSubWindowsList();
+      }
+      if(e.target.id=='loadWindowsButton'){
+        subWindowsCreator.loadSubWindowsList();
+      }
+
+      if(e.target.id=='clearWindowsButton'){
+        subWindowsCreator.clearSubWindowsContainer();
+      }
+
+    });
+</script>
+
+
+</body>
+</html>

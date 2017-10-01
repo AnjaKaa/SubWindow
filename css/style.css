@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: LightCyan;
+}
+
+.container_labels {
+  background-color: lightblue; 
+}
+
+.subWindow {
+  background-color: lightblue;  
+  border-radius: 15px;
+  border: 2px solid darkcyan;
+}
+
+.subWindow_title {
+  border-radius: 0 15px 0 0; 
+  color: white; 
+  background-color: DarkCyan; 
+}
+
+.subWindow_buttons {
+  border-radius: 0 15px 0 0;
+  background-color: CadetBlue; 
+} 
+
+.subWindow_button {
+  background-color: orange;
+  border-radius: 50%; 
+}
+
+.subWindow_button:hover {
+  background-color: darkorange; 
+}
+
+.subWindow_content{
+  background-color: white;
+}
